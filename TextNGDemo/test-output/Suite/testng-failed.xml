@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listenersuitedemo.ListenerImplementationsDemo"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="testNG.AssOnGoggle">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="setbrowser"/>
+        </methods>
+      </class> <!-- testNG.AssOnGoggle -->
+      <class name="listenersuitedemo.AlwaysRunDemo">
+        <methods>
+          <include name="strartapp"/>
+          <include name="checkTitle"/>
+          <include name="signoff"/>
+          <include name="loginapp"/>
+        </methods>
+      </class> <!-- listenersuitedemo.AlwaysRunDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
